@@ -1,5 +1,7 @@
 # singularity-samtools
 
+Singularity for samtools
+
 ## Build
 
 ```bash
@@ -13,3 +15,6 @@ $ sudo singularity bootstrap samtools.img Singularity
 $ singularity run samtools.img --help
 ```
 
+## Notes
+
+- This uses Alpine Linux as base image.

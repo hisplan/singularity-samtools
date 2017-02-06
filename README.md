@@ -8,19 +8,19 @@ Singularity for samtools
 
 ## Build
 
-Download `Singularity` file from this git repository.
+1. Download `Singularity` file from this git repository.
 
-Create a 20MB empty image with:
+1. Create a 200MB empty image:
 
-```bash
-$ sudo singularity create -s 200 samtools.img
-```
+    ```bash
+    $ sudo singularity create -s 200 samtools.img
+    ```
 
-Bootstrap the image using the `Singularity` image definition file you downloaded from the previous step:
+1. Bootstrap the image using the `Singularity` image definition file you downloaded from the previous step:
 
-```bash
-$ sudo singularity bootstrap samtools.img Singularity
-```
+    ```bash
+    $ sudo singularity bootstrap samtools.img Singularity
+    ```
 
 ## Run
 

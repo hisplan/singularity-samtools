@@ -31,4 +31,4 @@ $ singularity run samtools.img --help
 ## Other Notes
 
 - This uses Alpine Linux as base image.
-- Note that the image definition file being used here contains a bunch of commands that downloads and compiles the source code, which requires the compiler and temporary space. This is the main reason why the container image requires about 200MB. It would be nice if Singularity provides a way to shrink the image down to the only necessary size. Another workaround would be `Dockerfile`.
+- Note that the image definition file being used here contains a bunch of commands that downloads and compiles the source code of samtools, which is the main reason why the container image requires about 200MB. It would be nice if Singularity provides a way to shrink the image down to the only necessary size. Another workaround would be `Dockerfile`.

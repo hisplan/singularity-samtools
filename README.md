@@ -10,7 +10,7 @@ Singularity for samtools
 
 1. Download `Singularity` file from this git repository.
 
-1. Create a 200MB empty image:
+1. Create an empty container image of 200MB:
 
     ```bash
     $ sudo singularity create -s 200 samtools.img
@@ -28,6 +28,7 @@ Singularity for samtools
 $ singularity run samtools.img --help
 ```
 
-## Notes
+## Other Notes
 
 - This uses Alpine Linux as base image.
+- Note that the image definition file being used here contains a bunch of commands that downloads and compiles the source code, which requires the compiler and temporary space. This is the main reason why the container image requires about 200MB. It would be nice if Singularity provides a way to shrink the image down to the only necessary size. Another workaround would be `Dockerfile`.
